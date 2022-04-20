@@ -1,4 +1,5 @@
 import React from "react";
+
 import './WelcomeBanner.css';
 
 export default function WelcomeBanner() {

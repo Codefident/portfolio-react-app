@@ -1,0 +1,49 @@
+.Project-item-flying-div {
+    background-color: transparent;
+    opacity: 0;
+    
+    cursor: pointer;
+    z-index: 1;
+}
+
+.Project-item-flying-div:hover {
+    opacity: 1;
+    background-color: black;
+}
+
+.Project-item {
+    background-color: rgb(50, 205, 50);
+
+    padding: 10px;
+    height: 15vh;
+    min-height: 100px;
+    width: 20vw;
+    min-width: 200px;
+
+    display: flex;
+    direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    cursor: pointer;
+    z-index: 0.9;
+}
+
+.Project-item-name {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.Project-item-img {
+    display: flex;
+    height: 100%;
+    width: 50%;
+}
