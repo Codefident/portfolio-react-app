@@ -3,7 +3,7 @@
     border-radius: 10px;
     overflow: hidden;
 
-    padding: 10px;
+    /* padding: 10px; */
     height: 15vh;
     min-height: 100px;
     width: 20vw;
@@ -68,7 +68,7 @@
 .Project-item-links-link:hover {
     background-color: rgb(50, 205, 50);
     box-shadow: 0 0 1em rgb(50, 205, 50);
-    border-radius: 10px;
+    /* border-radius: 10px; */
     opacity: 1;
     color: black;
 }

@@ -5,6 +5,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 import WelcomeBanner from "./components/WelcomeBanner/WelcomeBanner";
 import BannerBottomText from './components/BannerBottomText/BannerBottomText';
 import ProjectItem from './components/ProjectItem/ProjectItem';
+import Footer from './components/Footer/Footer';
 
 
 const projects = [
@@ -45,6 +46,7 @@ function App() {
 
     return(
         <div className="App">
+
             <div className="App-content">
 
                 <Fade cascade delay={1000} duration={2000}>
@@ -61,7 +63,10 @@ function App() {
                         {projectsList}
                     </Fade>
                 </div>
+
+                <Footer/>
             </div>
+            
         </div>
     );
 }

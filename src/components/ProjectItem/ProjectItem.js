@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './ProjectItem.css';
 
@@ -20,8 +20,8 @@ export default function ProjectItem(props) {
         <div className='Project-item' onMouseOver={projectItemOver} onMouseOut={projectItemOut}>
             <div className='Project-item-name'>{props.name}</div>
             <div className='Project-item-links'>
-                <a className='Project-item-links-link' href={props.github} target="_blank">project's GitHub </a>
-                <a className='Project-item-links-link' href={props.url} target="_blank">Try it! ▶</a>
+                <a className='Project-item-links-link' href={props.github} target="_blank" rel="noreferrer">project's GitHub </a>
+                <a className='Project-item-links-link' href={props.url} target="_blank" rel="noreferrer">Try it! ▶</a>
             </div>
         </div>
     );
