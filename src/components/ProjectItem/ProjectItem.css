@@ -1,18 +1,7 @@
-.Project-item-flying-div {
-    background-color: transparent;
-    opacity: 0;
-    
-    cursor: pointer;
-    z-index: 1;
-}
-
-.Project-item-flying-div:hover {
-    opacity: 1;
-    background-color: black;
-}
-
 .Project-item {
     background-color: rgb(50, 205, 50);
+    border-radius: 10px;
+    overflow: hidden;
 
     padding: 10px;
     height: 15vh;
@@ -21,29 +10,65 @@
     min-width: 200px;
 
     display: flex;
-    direction: row;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 
-    cursor: pointer;
-    z-index: 0.9;
+    cursor: default;
+    z-index: 2;
+
+    transition-duration: 0.1s;
+    transition-property: filter, background-color, opacity, box-shadow;
+}
+
+.Project-item:hover {
+    background-color: transparent;
+    box-shadow: 0 0 1em rgb(50, 205, 50);
 }
 
 .Project-item-name {
     height: 100%;
     width: 50%;
     display: flex;
-    direction: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     font-size: 1.5em;
     font-weight: bold;
-    color: #1a1a1a;
+    color: black;
 }
 
-.Project-item-img {
+.Project-item-links {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
     height: 100%;
     width: 50%;
+}
+
+.Project-item-links-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50%;
+    width: 100%;
+
+    text-decoration: none;
+    color: rgb(50, 205, 50);
+
+    transition-duration: 0.1s;
+}
+
+.Project-item-links-link:hover {
+    background-color: rgb(50, 205, 50);
+    box-shadow: 0 0 1em rgb(50, 205, 50);
+    border-radius: 10px;
+    opacity: 1;
+    color: black;
 }

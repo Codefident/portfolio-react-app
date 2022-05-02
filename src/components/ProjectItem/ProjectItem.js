@@ -4,18 +4,25 @@ import './ProjectItem.css';
 
 export default function ProjectItem(props) {
 
-    const [opacity, changeOpacity] = useState(0);
-
-    return (
-        <>
-        <div className='Project-item-flying-div'>
-        </div>    
-        <div className='Project-item'>
+    const projectItemOver = (event) => {
+        const projectNameElement = document.querySelectorAll(".Project-item-name")[props.index];
+        projectNameElement.style.color = "rgb(50, 205, 50)";
+        projectNameElement.style.textShadow = "0px 0px 18px rgb(50, 205, 50)";
+    };
+    
+    const projectItemOut = (event) => {
+        const projectNameElement = document.querySelectorAll(".Project-item-name")[props.index];
+        projectNameElement.style.color = "black";
+        projectNameElement.style.textShadow = "none";
+    };
+    
+    return (   
+        <div className='Project-item' onMouseOver={projectItemOver} onMouseOut={projectItemOut}>
             <div className='Project-item-name'>{props.name}</div>
-            <div className='Project-item-img'>
-                <img src={props.img} alt={props.name + " image"}/>
+            <div className='Project-item-links'>
+                <a className='Project-item-links-link' href={props.github} target="_blank">project's GitHub </a>
+                <a className='Project-item-links-link' href={props.url} target="_blank">Try it! ▶</a>
             </div>
         </div>
-        </>
     );
 }

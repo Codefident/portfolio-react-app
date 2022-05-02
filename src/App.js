@@ -22,7 +22,7 @@ const projects = [
     },
     {
         name: "Pacman - map generator",
-        url: "#",
+        url: "https://codefident.github.io/pacman-map-generator/",
         github: "https://github.com/Codefident/pacman-map-generator",
         img: "."
     }
@@ -38,11 +38,10 @@ function App() {
         delay += 1000;
         return (
             <Slide key={i} delay={delay} direction='right'>
-                <ProjectItem name={project.name} url={project.url} github={project.github} img={project.img}/>
+                <ProjectItem index={i} name={project.name} url={project.url} github={project.github} img={project.img}/>
             </Slide>
         );
     })
-    console.log(projectsList)
 
     return(
         <div className="App">
