@@ -16,9 +16,9 @@ const projects = [
         img: "."
     },
     {
-        name: "WebPlayer",
+        name: "Checkers",
         url: "#",
-        github: "https://github.com/Codefident/web-player",
+        github: "https://github.com/Codefident/checkers",
         img: "."
     },
     {
@@ -26,7 +26,13 @@ const projects = [
         url: "https://codefident.github.io/pacman-map-generator/",
         github: "https://github.com/Codefident/pacman-map-generator",
         img: "."
-    }
+    },
+    {
+        name: "WebPlayer",
+        url: "#",
+        github: "https://github.com/Codefident/web-player",
+        img: "."
+    },
 ]
 
 
